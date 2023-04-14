@@ -20,3 +20,5 @@ Explination of Iterations for Table Creations:
     - delivery_address2 varchar(200)
     - delivery_city varchar(50)
     - delivery_zipcode varchar(20)
+    
+ - ![image](https://user-images.githubusercontent.com/69771935/232108605-08abbc19-51e5-4ecd-8594-58208b82be92.png)
