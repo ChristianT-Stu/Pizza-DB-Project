@@ -1,7 +1,7 @@
 Explination of Iterations for Table Creations: 
 
 (4/14/23) - Iteration 1 
-  - Desgined my first standard table within QuickDBD. 
+  - Designed my first standard table within QuickDBD. 
     This will take care of the "Orders" that will come into my Pizza Joint, and track relevant information associated to them.
     
     This first iteration table includes the following fields: 
