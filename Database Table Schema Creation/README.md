@@ -26,7 +26,7 @@ Explination of Iterations for Table Creations:
 
 (4/15/23) - Iteration 2
   - Repetative info noticed in created table above in Iteration 1.
-    Decided to create two more tables to handle excess overflow of info and link these new tables with primary keys. 
+    Decided to create two more tables to handle excess overflow of info and link these new tables with cust_id, and add_id.
     I have made a Customers table and an Address Table
     
     Customer Table: 
@@ -42,3 +42,19 @@ Explination of Iterations for Table Creations:
     - delivery_zipcode varchar(20)
     
  ![image](https://user-images.githubusercontent.com/69771935/232240490-567256e3-2748-4a75-b0f2-273f5c1088a7.png)
+ 
+ 
+ (4/15/23) - Iteration 3
+  - Repetative info noticed in created table above in Iteration 2.
+    Decided to create another table to handle item info and link this new table with item_id.
+    With this new Item table, if at any point we would want to change any of the item names from the menu, you would only need to change one field in the new table.
+    
+    Item Table:
+    - item_id int pk FK >- order.item_id
+    - sku varchar(20)
+    - item_name varchar(50)
+    - item_cat varchar(50)
+    - item_size varchar(20)
+    - item_price decimal(5,2)
+
+![image](https://user-images.githubusercontent.com/69771935/232256046-2eb1117a-8dd1-4575-86e1-fcd7d82b916d.png)
