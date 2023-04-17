@@ -58,3 +58,31 @@ Explination of Iterations for Table Creations:
     - item_price decimal(5,2)
 
 ![image](https://user-images.githubusercontent.com/69771935/232256046-2eb1117a-8dd1-4575-86e1-fcd7d82b916d.png)
+
+
+(4/17/23) - Iteration 4
+  - Created a new 3 tables to track and log stock information
+    These table will allow our resturant owner to know when it is time to order new stock. To do this I created 3 tables.
+    - One table that tracked what ingredients go into pizza's
+    - Their quanity based on the size of the pizza
+    - The exsiting stock levels. 
+    
+    Ingredient Table: 
+    - ing_id varchar(10) pk FK >- recipe.ing_id
+    - ing_name varchar(200)
+    - ing_weight int
+    - ing_meas varchar(20)
+    - ing_price decimal(5,2)
+    
+    Recipe Table: 
+    - row_id int pk
+    - recipe_id varchar(20) FK >- item.sku
+    - ing_id varchar(10)
+    - quantity int
+    
+    Inventory Table:
+    - inv_id int pk
+    - item_id varchar(10) FK >- recipe.ing_id
+    - quanity int
+    
+![image](https://user-images.githubusercontent.com/69771935/232613168-51d8801d-403a-4136-bc33-700a17d38ed4.png)
