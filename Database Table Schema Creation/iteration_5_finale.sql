@@ -1,6 +1,3 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
 
 CREATE TABLE `order` (
     `row_id` int  NOT NULL ,
@@ -103,7 +100,7 @@ CREATE TABLE `rota` (
     `row_id` int  NOT NULL ,
     `rota_id` varchar(20)  NOT NULL ,
     `date` datetime  NOT NULL ,
-    `shift_id` varchchar(20)  NOT NULL ,
+    `shift_id` varchar(20)  NOT NULL ,
     `staff_id` varchar(20)  NOT NULL ,
     PRIMARY KEY (
         `row_id`
