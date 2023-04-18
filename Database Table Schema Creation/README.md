@@ -86,3 +86,31 @@ Explination of Iterations for Table Creations:
     - quanity int
     
 ![image](https://user-images.githubusercontent.com/69771935/232613168-51d8801d-403a-4136-bc33-700a17d38ed4.png)
+
+(4/18/23) - Iteration 5 (Final Iteration)
+  - Created a new 3 tables to track and log staff, shift rotation, and salray information. 
+    - One table will track staff title
+    - One table will track rotation in shift
+    - One table will track the pay scale for each employee. 
+    
+   Staff Information Table:
+   - staff_id varchar(20) pk
+   - first_name varchar(50)
+   - last_name varchar(50)
+   - position varchar(100)
+   - hourly_rate decimal(5,2)
+
+   Shift Information Table:
+   - shift_id varchar(20) pk FK >- rota.shift_id
+   - day_of_week varchar(10)
+   - start_time time
+   - end_time time
+
+   Rotation Information Table: 
+   - row_id int pk
+   - rota_id varchar(20)
+   - date datetime FK >- order.created_at
+   - shift_id varchchar(20)
+   
+![image](https://user-images.githubusercontent.com/69771935/232805561-52508b14-68bb-4938-aacf-2306bcb4256f.png)
+
